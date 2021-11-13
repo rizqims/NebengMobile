@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nebeng">
         <activity
+            android:name=".OTPVerfActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false"
-            android:label="Home"/>
+            android:label="Home" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

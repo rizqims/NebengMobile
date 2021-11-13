@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/layout/activity_home.xml" value="0.21510416666666668" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/bg_otp_item.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/question_btn.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/rounded_btn.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/rounded_btntes.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/veryrounded_btn.xml" value="0.23125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/font/font_manager.xml" value="0.2453125" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/layout/activity_home.xml" value="0.22" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/layout/activity_otp.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/layout/activity_register.xml" value="0.22" />
       </map>
     </option>
   </component>

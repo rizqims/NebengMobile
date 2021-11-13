@@ -1,3 +1,12 @@
 <resources>
+<!--    splash screen-->
     <string name="app_name">Nebeng</string>
+
+<!--    halaman pengguna atau driver-->
+    <string name="daftar_menjadi_pengguna">Daftar Menjadi Pengguna</string>
+    <string name="daftar_menjadi_driver">Daftar Menjadi Driver</string>
+    <string name="atau_menjadi">Atau Menjadi</string>
+
+<!--    halaman daftar-->
+    <string name="title_daftar">DAFTAR</string>
 </resources>
