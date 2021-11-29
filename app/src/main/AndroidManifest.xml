@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nebeng">
         <activity
+            android:name=".inpHP"
+            android:exported="false" />
+        <activity
             android:name=".OTPVerfActivity"
             android:exported="false" />
         <activity
