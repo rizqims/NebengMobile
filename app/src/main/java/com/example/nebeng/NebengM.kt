@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class inpHP : AppCompatActivity() {
+class NebengM : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_inp_hp)
-
+        setContentView(R.layout.activity_nebeng_m)
         supportActionBar?.hide()
-        val userbtn : Button = findViewById(R.id.btn_masuknomor)
+
+        val userbtn : Button = findViewById(R.id.NebengProceed)
         userbtn.setOnClickListener{
-            val Intent = Intent(this, OTPVerfActivity::class.java)
+            val Intent = Intent(this, NebengProceed::class.java)
             startActivity(Intent)
         }
     }

@@ -10,5 +10,6 @@
 <!--    custom color-->
     <color name="main">#AB7FDD</color>
     <color name="main_2">#E1CCEC</color>
+    <color name="transparent">#0000</color>
 
 </resources>

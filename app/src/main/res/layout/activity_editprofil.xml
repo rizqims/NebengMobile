@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Editprofil">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:background="@color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:text="Akun"
+            android:textAllCaps="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/wrapperinp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbar">
+
+        <TextView
+            android:id="@+id/fotoprofiltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Foto Profil"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/fotoprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoprofiltxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profil_viewbadag" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fotoprofil"
+            android:layout_marginTop="35dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="45dp">
+
+
+            <TextView
+                android:id="@+id/namauserlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:labelFor="@id/namauserlbl"
+                android:text="Nama Pengguna"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/namauserinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namauserlbl"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notsoroundedbtn"
+                android:ems="10"
+                android:fontFamily="@font/inter_bold"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/genderlbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/namauserinp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_bold"
+                android:labelFor="@id/genderinp"
+                android:text="Gender"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/genderinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genderlbl"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notsoroundedbtn"
+                android:ems="10"
+                android:fontFamily="@font/inter_bold"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/telplbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/genderinp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_bold"
+                android:labelFor="@id/telpinp"
+                android:text="Nomor Telepon"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/telpinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telplbl"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notsoroundedbtn"
+                android:ems="10"
+                android:fontFamily="@font/inter_bold"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/nislbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telpinp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_bold"
+                android:labelFor="@id/nisinp"
+                android:text="NIS"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nisinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nislbl"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notsoroundedbtn"
+                android:ems="10"
+                android:fontFamily="@font/inter_bold"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/emaillbl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nisinp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/inter_bold"
+                android:labelFor="@id/emailinp"
+                android:text="NIS"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/emailinp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emaillbl"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/notsoroundedbtn"
+                android:ems="10"
+                android:fontFamily="@font/inter_bold"
+                android:inputType="textPersonName"
+                android:text=" "
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="35dp"
+        android:text="Simpan"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wrapperinp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

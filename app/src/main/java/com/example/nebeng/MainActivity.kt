@@ -12,7 +12,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         Handler().postDelayed({
-            val intent = Intent(this@MainActivity, HomeActivity::class.java)
+//            HomeActivity
+            val intent = Intent(this@MainActivity, testing::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
             finish()

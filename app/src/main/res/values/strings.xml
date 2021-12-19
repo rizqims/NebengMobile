@@ -9,4 +9,10 @@
 
     <!--    halaman daftar-->
     <string name="title_daftar">DAFTAR</string>
+    <string name="title_activity_beranda">Beranda</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Akun</string>
+    <string name="title_activity_nebeng">Nebeng</string>
+    <string name="action_settings">Settings</string>
 </resources>
