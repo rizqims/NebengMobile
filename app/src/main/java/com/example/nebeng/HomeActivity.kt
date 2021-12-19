@@ -44,6 +44,12 @@ class HomeActivity : AppCompatActivity() {
         request.nis = nis_input.text.toString().trim()
         request.password = password_input.text.toString().trim()
 
+        val i : Button = findViewById(R.id.nen)
+        i.setOnClickListener{
+            val Intent = Intent(this, Beranda::class.java)
+            startActivity(Intent)
+        }
+
         val retro = Retro().getRetroClient().create(UserAPI::class.java)
         retro.login(request).enqueue(object:Callback<UserResponse>{
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
@@ -54,9 +60,8 @@ class HomeActivity : AppCompatActivity() {
 //                    Log.e("Nama",user!!.data?.nama_lengkap.toString())
 //                    Log.e("Nis",user!!.data?.nis.toString())
 //                    Log.e("Password",user!!.data?.password.toString())
-                    val intent = Intent(this@HomeActivity, BerandaActivity::class.java)
+                    val intent = Intent(this@HomeActivity, Beranda::class.java)
                     startActivity(intent)
-
 
                 }else{
                     Log.e("Message",user!!.message.toString())
