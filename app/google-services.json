@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "22520182214",
+    "project_id": "nebeng-2f97c",
+    "storage_bucket": "nebeng-2f97c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22520182214:android:67ce56f93361b79bacaec7",
+        "android_client_info": {
+          "package_name": "com.example.nebeng"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22520182214-24mbh4k0ublufm352l55tch3hjin1ja7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgxTqrPveaZQ0taPyzEsjQigY1dR3qgEg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22520182214-24mbh4k0ublufm352l55tch3hjin1ja7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
