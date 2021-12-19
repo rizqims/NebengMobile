@@ -40,7 +40,7 @@
 
 
             <TextView
-                android:id="@+id/namaAkun"
+                android:id="@+id/namaProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -53,7 +53,7 @@
                 android:id="@+id/emailAkun"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/namaAkun"
+                android:layout_below="@id/namaProfile"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="asepusep@gmail.com"

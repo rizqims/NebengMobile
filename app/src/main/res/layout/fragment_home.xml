@@ -33,8 +33,9 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold"
-            android:text="Nama Akun"
             android:textSize="20sp" />
+<!--            android:text="Nama Akun"-->
+
 
         <TextView
             android:id="@+id/noTelp"
@@ -43,8 +44,9 @@
             android:layout_below="@id/namaAkun"
             android:layout_marginStart="25dp"
             android:fontFamily="@font/inter_regular"
-            android:text="Nomor Telepon"
             android:textSize="20sp" />
+<!--            android:text="Nomor Telepon"-->
+
     </RelativeLayout>
 
     <RelativeLayout
@@ -88,6 +90,26 @@
 
             />
 
+        <Button
+            android:id="@+id/Logoutbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Nebengbtntxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:background="@null"
+            android:src="@drawable/btn_nebnaw"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Logoutbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/inter_bold"
+            android:text="Logout"
+            android:textSize="15sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

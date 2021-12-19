@@ -5,16 +5,21 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.nebeng.helper.Constant
+import com.example.nebeng.helper.PreferencesHelper
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
 
 class HomeActivity : AppCompatActivity() {
+    lateinit var sharedpref : PreferencesHelper
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        sharedpref = PreferencesHelper(this)
         supportActionBar?.hide()
 //        val userbtn : Button = findViewById(R.id.btn_masuk)
 //        userbtn.setOnClickListener{
@@ -23,6 +28,14 @@ class HomeActivity : AppCompatActivity() {
 //        }
         //saat oncreate jalankan function initAction()
         initAction()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if(sharedpref.getBoolean(Constant.PREF_IS_LOGIN)){
+            startActivity(Intent(this,Beranda::class.java))
+            finish()
+        }
     }
 
     fun initAction(){
@@ -56,15 +69,24 @@ class HomeActivity : AppCompatActivity() {
                 val user = response.body()
                 //tinggal buat cara agar sukses login dan ke halaman beranda
                 if(user!!.message == "Login Sukses"){
-//                    Log.e("Message",user!!.message.toString())
-//                    Log.e("Nama",user!!.data?.nama_lengkap.toString())
-//                    Log.e("Nis",user!!.data?.nis.toString())
-//                    Log.e("Password",user!!.data?.password.toString())
-                    val intent = Intent(this@HomeActivity, Beranda::class.java)
-                    startActivity(intent)
+                    Toast.makeText(applicationContext,"Login Berhasil",Toast.LENGTH_SHORT).show()
+                    sharedpref.put(Constant.PREF_NIS,user!!.data?.nis.toString())
+                    sharedpref.put(Constant.PREF_PASSWORD,user!!.data?.password.toString())
+                    sharedpref.put(Constant.PREF_IS_LOGIN,true)
+                    //user data
+                    sharedpref.put(Constant.NAMA_LENGKAP,user!!.data?.nama_lengkap.toString())
+                    sharedpref.put(Constant.EMAIL,user!!.data?.email.toString())
+                    sharedpref.put(Constant.NO_TELP,user!!.data?.no_telp.toString())
+                    sharedpref.put(Constant.JENIS_KELAMIN,user!!.data?.jenis_kelamin.toString())
 
+                    val intent = Intent(this@HomeActivity, Beranda::class.java)
+//                    intent.putExtra("nama_lengkap",user!!.data?.nama_lengkap.toString())
+//                    intent.putExtra("no_telp",user!!.data?.no_telp.toString())
+//                    intent.putExtra("email",user!!.data?.email.toString())
+                    startActivity(intent)
                 }else{
                     Log.e("Message",user!!.message.toString())
+                    Toast.makeText(applicationContext,"Login Gagal",Toast.LENGTH_SHORT).show()
                 }
 
             }
