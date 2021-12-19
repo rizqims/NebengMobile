@@ -1,9 +1,7 @@
 package com.example.nebeng
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 class inpHpori : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -11,10 +9,10 @@ class inpHpori : AppCompatActivity() {
         setContentView(R.layout.activity_inp_hp)
 
         supportActionBar?.hide()
-        val userbtn : Button = findViewById(R.id.btn_masuknomor)
-        userbtn.setOnClickListener{
-            val Intent = Intent(this, OTPVerfActivity::class.java)
-            startActivity(Intent)
-        }
+//        val userbtn : Button = findViewById(R.id.btn_masuknomor)
+//        userbtn.setOnClickListener{
+//            val Intent = Intent(this, OTPVerfActivity::class.java)
+//            startActivity(Intent)
+//        }
     }
 }
