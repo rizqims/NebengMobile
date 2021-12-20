@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:src="@drawable/profil_view" />
+            android:src="@drawable/testy" />
 
         <TextView
             android:id="@+id/namaAkun"
@@ -33,7 +33,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/inter_bold"
-            android:textSize="20sp" />
+            android:textSize="17sp" />
 <!--            android:text="Nama Akun"-->
 
 
@@ -44,7 +44,7 @@
             android:layout_below="@id/namaAkun"
             android:layout_marginStart="25dp"
             android:fontFamily="@font/inter_regular"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 <!--            android:text="Nomor Telepon"-->
 
     </RelativeLayout>
