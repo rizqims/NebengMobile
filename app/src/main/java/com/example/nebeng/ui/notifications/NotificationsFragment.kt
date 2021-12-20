@@ -6,21 +6,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.ImageButton
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.nebeng.Beranda
 import com.example.nebeng.Editprofil
+import com.example.nebeng.HomeActivity
+import com.example.nebeng.NebengProceed
 import com.example.nebeng.R
 import com.example.nebeng.databinding.FragmentNotificationsBinding
+import com.example.nebeng.helper.Constant
+import com.example.nebeng.helper.PreferencesHelper
 
 class NotificationsFragment : Fragment() {
 
     private lateinit var notificationsViewModel: NotificationsViewModel
     private var _binding: FragmentNotificationsBinding? = null
+
+
+    private lateinit var sharedpref: PreferencesHelper
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -42,6 +48,31 @@ class NotificationsFragment : Fragment() {
             textView.text = it
         })
 
+        sharedpref = PreferencesHelper(requireActivity())
+
+
+//        Monggo dicoba
+        val textNamaProfile : TextView = root.findViewById(R.id.namaProfile)
+        val textEmailProfile : TextView = root.findViewById(R.id.emailAkun)
+        val textNoTelpProfile : TextView = root.findViewById(R.id.noAkun)
+        textNamaProfile.setText(Constant.NAMA_LENGKAP).toString()
+        textEmailProfile.setText(Constant.EMAIL).toString()
+        textNoTelpProfile.setText(Constant.NO_TELP).toString()
+
+//        Btn Logout
+        val logoutBtn: Button = root.findViewById(R.id.keluarbtn)
+        logoutBtn.setOnClickListener {
+            sharedpref.logout()
+            Toast.makeText(requireActivity(), "Logout Berhasil", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireActivity(), HomeActivity::class.java))
+        }
+
+//        Btn Edit Profil
+        val i : Button = root.findViewById(R.id.editbtnn)
+        i.setOnClickListener {
+            val i = Intent(requireActivity(), Editprofil::class.java)
+            startActivity(i)
+        }
 
         return root
     }

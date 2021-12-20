@@ -90,26 +90,6 @@
 
             />
 
-        <Button
-            android:id="@+id/Logoutbtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Nebengbtntxt"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:background="@null"
-            android:src="@drawable/btn_nebnaw"
-
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Logoutbtn"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/inter_bold"
-            android:text="Logout"
-            android:textSize="15sp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

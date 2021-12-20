@@ -2,8 +2,11 @@ package com.example.nebeng.helper
 
 import android.content.Context
 import android.content.SharedPreferences
+import com.example.nebeng.Beranda
+import com.example.nebeng.ui.notifications.NotificationsFragment
+
 //tempat untuk nyimpen data yang diambil dari api,dan ada session juga
-class PreferencesHelper (context : Context) {
+class PreferencesHelper(context: Context) {
     private val PREFS_NAME = "userdatapreference"
     private val sharedpref : SharedPreferences
     val editor : SharedPreferences.Editor

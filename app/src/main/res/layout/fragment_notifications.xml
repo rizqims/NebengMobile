@@ -125,25 +125,25 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@color/transparent"
-            android:fontFamily="@font/inter_regular"
             android:drawableLeft="@drawable/ic_baseline_insert_drive_file_24"
+            android:fontFamily="@font/inter_regular"
             android:text="Ketentuan Aplikasi"
             android:textAllCaps="false"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
+
         <Button
+            android:id="@+id/keluarbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/ketentuanbtn"
             android:layout_marginStart="25dp"
             android:layout_marginTop="10dp"
             android:background="@color/transparent"
-            android:fontFamily="@font/inter_regular"
             android:drawableLeft="@drawable/ic_baseline_exit_to_app_24"
+            android:fontFamily="@font/inter_regular"
             android:text="Keluar"
             android:textAllCaps="false"
-            android:textColor="@color/black"
-            />
+            android:textColor="@color/black" />
 
 
 
