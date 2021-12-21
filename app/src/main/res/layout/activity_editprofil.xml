@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:fontFamily="@font/inter_bold"
+            android:fontFamily="@font/inter_regular"
             android:text="Foto Profil"
             android:textSize="18sp" />
 
@@ -71,7 +71,7 @@
                 android:id="@+id/namauserlbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:labelFor="@id/namauserlbl"
                 android:text="Nama Pengguna"
 
@@ -85,7 +85,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/notsoroundedbtn"
                 android:ems="10"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:inputType="textPersonName"
                 android:text=" "
                 android:textColor="@color/white" />
@@ -96,9 +96,9 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/namauserinp"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:labelFor="@id/genderinp"
-                android:text="Gender"
+                android:text="Email"
 
                 android:textSize="16sp" />
 
@@ -110,7 +110,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/notsoroundedbtn"
                 android:ems="10"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:inputType="textPersonName"
                 android:text=" "
                 android:textColor="@color/white" />
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/genderinp"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:labelFor="@id/telpinp"
                 android:text="Nomor Telepon"
 
@@ -135,7 +135,7 @@
                 android:layout_marginTop="5dp"
                 android:background="@drawable/notsoroundedbtn"
                 android:ems="10"
-                android:fontFamily="@font/inter_bold"
+                android:fontFamily="@font/inter_regular"
                 android:inputType="textPersonName"
                 android:text=" "
                 android:textColor="@color/white" />
@@ -146,49 +146,46 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/telpinp"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_bold"
-                android:labelFor="@id/nisinp"
-                android:text="NIS"
+                android:fontFamily="@font/inter_regular"
+                android:labelFor="@id/radioGrp"
+                android:text="Gender"
 
                 android:textSize="16sp" />
 
-            <EditText
-                android:id="@+id/nisinp"
+            <RadioGroup
+                android:id="@+id/radioGrp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
                 android:layout_below="@id/nislbl"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_bold"
-                android:inputType="textPersonName"
-                android:text=" "
-                android:textColor="@color/white" />
-
-            <TextView
-                android:id="@+id/emaillbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/nisinp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_bold"
-                android:labelFor="@id/emailinp"
-                android:text="NIS"
-
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/emailinp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/emaillbl"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_bold"
-                android:inputType="textPersonName"
-                android:text=" "
-                android:textColor="@color/white" />
+                >
+                <RadioButton
+                    android:id="@+id/radioM"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:checked="false"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/main"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Pria"
+                    />
+                <RadioButton
+                    android:id="@+id/radioF"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:checked="false"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:buttonTint="@color/main"
+                    android:fontFamily="@font/inter_regular"
+                    android:text="Wanita"
+                    />
+            </RadioGroup>
 
 
         </RelativeLayout>
@@ -201,7 +198,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="35dp"
         android:text="Simpan"
         android:textAllCaps="false"
