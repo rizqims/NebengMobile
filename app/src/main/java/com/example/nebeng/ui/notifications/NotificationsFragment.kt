@@ -13,7 +13,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.nebeng.Editprofil
 import com.example.nebeng.HomeActivity
-import com.example.nebeng.NebengProceed
 import com.example.nebeng.R
 import com.example.nebeng.databinding.FragmentNotificationsBinding
 import com.example.nebeng.helper.Constant

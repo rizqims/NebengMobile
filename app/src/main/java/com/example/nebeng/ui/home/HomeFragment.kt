@@ -12,7 +12,6 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.nebeng.Nawar_M
 import com.example.nebeng.NebengActivity
-import com.example.nebeng.NebengM
 import com.example.nebeng.R
 import com.example.nebeng.databinding.FragmentHomeBinding
 import com.example.nebeng.helper.Constant
@@ -54,7 +53,7 @@ class HomeFragment : Fragment() {
 
         val i: ImageButton = root.findViewById(R.id.Nebengbtn)
         i.setOnClickListener {
-            val Intent = Intent(requireActivity(), NebengM::class.java)
+            val Intent = Intent(requireActivity(), NebengActivity::class.java)
             startActivity(Intent)
         }
 

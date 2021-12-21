@@ -3,12 +3,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/actionbar.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/profil_view_nebeng.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/profil_view_nebeng_dua.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/activity_beranda.xml" value="0.2" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/activity_nawar_proceed.xml" value="0.33" />
-        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/activity_nebeng_m.xml" value="0.2" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/activity_nebeng_m.xml" value="0.15" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/activity_nebeng_proceed.xml" value="0.33" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/list_template.xml" value="0.22" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/layout/row.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/menu/menu_nebeng.xml" value="0.1" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/actionbar.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/bg_otp_item.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/borderbwh.xml" value="0.23125" />
@@ -33,7 +43,6 @@
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/rounded_btn.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/rounded_btn_logout.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/rounded_btntes.xml" value="0.23125" />
-        <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/testy.xml" value="0.20052083333333334" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/veryrounded_btn.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/drawable/wrapper_profil.xml" value="0.23125" />
         <entry key="..\:/Users/acer/AndroidStudioProjects/Nebeng/app/src/main/res/font/font_manager.xml" value="0.2453125" />
@@ -61,7 +70,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
