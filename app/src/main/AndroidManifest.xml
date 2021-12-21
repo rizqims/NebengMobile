@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Nebeng"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".NebengActivity"
+            android:exported="true"   />
+        <activity
             android:name=".Dummy"
             android:exported="false" />
         <activity
@@ -34,11 +37,11 @@
         <activity
             android:name=".NebengM"
             android:exported="false" />
-        <activity
-            android:name=".Nebeng"
-            android:exported="false"
-            android:label="@string/title_activity_nebeng"
-            android:theme="@style/Theme.Nebeng.NoActionBar" />
+<!--        <activity-->
+<!--            android:name=".Nebeng"-->
+<!--            android:exported="false"-->
+<!--            android:label="@string/title_activity_nebeng"-->
+<!--            android:theme="@style/Theme.Nebeng.NoActionBar" />-->
         <activity
             android:name=".Editprofil"
             android:exported="false" />
@@ -46,9 +49,6 @@
             android:name=".Beranda"
             android:exported="false"
             android:label="@string/title_activity_beranda" />
-        <activity
-            android:name=".inpHP"
-            android:exported="false" />
         <activity
             android:name=".HomeActivity"
             android:exported="false"

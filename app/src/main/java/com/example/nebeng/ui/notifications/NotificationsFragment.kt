@@ -42,37 +42,33 @@ class NotificationsFragment : Fragment() {
 
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         val root: View = binding.root
+        sharedpref = PreferencesHelper(requireActivity())
+        val TextNamaProfile : TextView = root.findViewById(R.id.namaProfile)
+        val TextEmailProfile : TextView = root.findViewById(R.id.emailAkun)
+        val TextNoTelp : TextView = root.findViewById(R.id.noAkun)
+        //button logout
+        val btnLogout : Button = root.findViewById(R.id.keluarbtn)
+        //button edit
+        val btnEditProfile : Button = root.findViewById(R.id.editbtnn)
+
+        TextNamaProfile.setText(sharedpref.getString(Constant.NAMA_LENGKAP)).toString()
+        TextEmailProfile.setText(sharedpref.getString(Constant.EMAIL)).toString()
+        TextNoTelp.setText(sharedpref.getString(Constant.NO_TELP)).toString()
+
+        btnLogout.setOnClickListener{
+            sharedpref.logout()
+            Toast.makeText(requireActivity(), "Logout Berhasil", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(requireActivity(), HomeActivity::class.java))
+        }
+        btnEditProfile.setOnClickListener{
+            startActivity(Intent(requireActivity(),Editprofil::class.java))
+        }
 
         val textView: TextView = binding.textNotifications
         notificationsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
 
-        sharedpref = PreferencesHelper(requireActivity())
-
-
-//        Monggo dicoba
-        val textNamaProfile : TextView = root.findViewById(R.id.namaProfile)
-        val textEmailProfile : TextView = root.findViewById(R.id.emailAkun)
-        val textNoTelpProfile : TextView = root.findViewById(R.id.noAkun)
-        textNamaProfile.setText(Constant.NAMA_LENGKAP).toString()
-        textEmailProfile.setText(Constant.EMAIL).toString()
-        textNoTelpProfile.setText(Constant.NO_TELP).toString()
-
-//        Btn Logout
-        val logoutBtn: Button = root.findViewById(R.id.keluarbtn)
-        logoutBtn.setOnClickListener {
-            sharedpref.logout()
-            Toast.makeText(requireActivity(), "Logout Berhasil", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(requireActivity(), HomeActivity::class.java))
-        }
-
-//        Btn Edit Profil
-        val i : Button = root.findViewById(R.id.editbtnn)
-        i.setOnClickListener {
-            val i = Intent(requireActivity(), Editprofil::class.java)
-            startActivity(i)
-        }
 
         return root
     }

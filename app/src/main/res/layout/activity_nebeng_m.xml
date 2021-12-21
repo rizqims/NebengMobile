@@ -102,69 +102,6 @@
                     android:text="Nebeng"
                     android:textAllCaps="false" />
             </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_marginTop="15dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/nebengcard">
-            </RelativeLayout>
         </LinearLayout>
     </ScrollView>
 

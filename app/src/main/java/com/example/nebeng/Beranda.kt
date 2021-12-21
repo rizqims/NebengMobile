@@ -1,30 +1,23 @@
 package com.example.nebeng
 
 //import com.example.nebeng.ui.notifications.NotificationsFragment
-import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageButton
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.nebeng.databinding.ActivityBerandaBinding
-import com.example.nebeng.helper.Constant
-import com.example.nebeng.helper.PreferencesHelper
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class Beranda : AppCompatActivity() {
 
     private lateinit var binding: ActivityBerandaBinding
-    private lateinit var sharedpref: PreferencesHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityBerandaBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        sharedpref = PreferencesHelper(this)
         supportActionBar?.hide()
         val navView: BottomNavigationView = binding.navView
 

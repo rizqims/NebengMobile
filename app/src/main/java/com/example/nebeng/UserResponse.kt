@@ -12,6 +12,10 @@ class UserResponse {
     var data:User?=null
 
     class User{
+        @SerializedName("id")
+        @Expose
+        var id:Int?=null
+
         @SerializedName("nis")
         @Expose
         var nis:String?=null
