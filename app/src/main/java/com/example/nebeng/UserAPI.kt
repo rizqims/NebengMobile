@@ -9,6 +9,4 @@ interface UserAPI {
     fun login(
         @Body userRequest:UserRequest
     ): Call<UserResponse>
-
-
 }

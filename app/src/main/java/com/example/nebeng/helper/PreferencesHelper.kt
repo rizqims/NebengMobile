@@ -35,6 +35,15 @@ class PreferencesHelper (context : Context) {
         return sharedpref.getBoolean(key,false)
     }
 
+    fun put(key: String,value:Int){
+        editor.putInt(key,value)
+            .apply()
+    }
+
+    fun getInt(key: String) : Int{
+        return sharedpref.getInt(key,0)
+    }
+
     fun logout(){
         editor.clear()
             .apply()

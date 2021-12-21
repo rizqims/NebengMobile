@@ -29,7 +29,7 @@ class HomeActivity : AppCompatActivity() {
         //saat oncreate jalankan function initAction()
         initAction()
     }
-
+    //cek sudah login atau belum
     override fun onStart() {
         super.onStart()
         if(sharedpref.getBoolean(Constant.PREF_IS_LOGIN)){
@@ -57,6 +57,7 @@ class HomeActivity : AppCompatActivity() {
         request.nis = nis_input.text.toString().trim()
         request.password = password_input.text.toString().trim()
 
+        //tidak termasuk login ini dibuat ms untuk testing ke beranda
         val i : Button = findViewById(R.id.nen)
         i.setOnClickListener{
             val Intent = Intent(this, Beranda::class.java)
