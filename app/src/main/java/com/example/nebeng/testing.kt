@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageButton
 
 class testing : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,7 +31,7 @@ class testing : AppCompatActivity() {
 
         val userbtnfour: Button = findViewById(R.id.gotoNawar)
         userbtnfour.setOnClickListener {
-            val Intent = Intent(this, Nawar_M::class.java)
+            val Intent = Intent(this, NawarActivity::class.java)
             startActivity(Intent)
         }
 

@@ -69,19 +69,21 @@ class HomeActivity : AppCompatActivity() {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 val user = response.body()
                 //tinggal buat cara agar sukses login dan ke halaman beranda
+                Toast.makeText(applicationContext,"Mohon Tunggu",Toast.LENGTH_LONG).show()
                 if(user!!.message == "Login Sukses"){
                     Toast.makeText(applicationContext,"Login Berhasil",Toast.LENGTH_SHORT).show()
                     sharedpref.put(Constant.PREF_NIS,user!!.data?.nis.toString())
                     sharedpref.put(Constant.PREF_PASSWORD,user!!.data?.password.toString())
                     sharedpref.put(Constant.PREF_IS_LOGIN,true)
                     //user data
+                    sharedpref.put(Constant.ID,user!!.data?.id.toString())
                     sharedpref.put(Constant.NAMA_LENGKAP,user!!.data?.nama_lengkap.toString())
                     sharedpref.put(Constant.EMAIL,user!!.data?.email.toString())
                     sharedpref.put(Constant.NO_TELP,user!!.data?.no_telp.toString())
                     sharedpref.put(Constant.JENIS_KELAMIN,user!!.data?.jenis_kelamin.toString())
 
                     val intent = Intent(this@HomeActivity, Beranda::class.java)
-//                    intent.putExtra("nama_lengkap",user!!.data?.nama_lengkap.toString())
+//                    intent.put Extra("nama_lengkap",user!!.data?.nama_lengkap.toString())
 //                    intent.putExtra("no_telp",user!!.data?.no_telp.toString())
 //                    intent.putExtra("email",user!!.data?.email.toString())
                     startActivity(intent)
@@ -90,10 +92,15 @@ class HomeActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,"Login Gagal",Toast.LENGTH_SHORT).show()
                 }
 
+//                if(!response.code()){
+//                    Toast.makeText(applicationContext,"Maaf Untuk Saat Ini,Sedang Maintenance",Toast.LENGTH_LONG).show()
+//                }
+
             }
 
             override fun onFailure(call: Call<UserResponse>, t: Throwable) {
-                Log.e("Login Error",t.message.toString())
+                Log.e("Login Error","Untuk Saat Ini Aplikasi Masih Maintenance")
+                Toast.makeText(applicationContext,"Untuk Saat Ini Aplikasi Masih Maintenance",Toast.LENGTH_LONG).show()
             }
 
         })

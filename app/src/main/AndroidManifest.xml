@@ -23,7 +23,7 @@
             android:name=".NawarProceed"
             android:exported="false" />
         <activity
-            android:name=".Nawar_M"
+            android:name=".NawarActivity"
             android:exported="false" />
         <activity
             android:name=".ProgresNebeng"

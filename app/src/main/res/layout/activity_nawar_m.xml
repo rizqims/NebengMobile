@@ -8,7 +8,7 @@
     android:paddingEnd="30dp"
     android:paddingTop="10dp"
     android:paddingBottom="10dp"
-    tools:context=".Nawar_M">
+    tools:context=".NawarActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -36,43 +36,43 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="183dp" />
 
-        <TextView
-            android:id="@+id/namalbl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter_regular"
-            android:labelFor="@id/namainp"
-            android:text="Nama"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/atas" />
+<!--        <TextView-->
+<!--            android:id="@+id/namalbl"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:fontFamily="@font/inter_regular"-->
+<!--            android:labelFor="@id/namainp"-->
+<!--            android:text="Nama"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/atas" />-->
 
-        <EditText
-            android:textColor="@color/white"
-            android:id="@+id/namainp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/rounded_btn"
-            android:ems="10"
-            android:fontFamily="@font/inter_regular"
-            android:inputType="textPersonName"
-            android:padding="3dp"
-            android:paddingStart="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/namalbl" />
+<!--        <EditText-->
+<!--            android:textColor="@color/white"-->
+<!--            android:id="@+id/namainp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:background="@drawable/rounded_btn"-->
+<!--            android:ems="10"-->
+<!--            android:fontFamily="@font/inter_regular"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="3dp"-->
+<!--            android:paddingStart="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/namalbl" />-->
 
         <TextView
-            android:id="@+id/alamatlbl"
+            android:id="@+id/alamattujuan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/inter_regular"
             android:labelFor="@id/alamatinp"
-            android:text="Alamat"
+            android:text="Alamat Tujuan"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/namainp" />
+            app:layout_constraintTop_toBottomOf="@id/atas" />
 
         <EditText
             android:textColor="@color/white"
@@ -87,7 +87,7 @@
             android:padding="3dp"
             android:paddingStart="10dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/alamatlbl" />
+            app:layout_constraintTop_toBottomOf="@+id/alamattujuan" />
 
         <TextView
             android:id="@+id/hargalbl"
@@ -95,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/inter_regular"
-            android:labelFor="@id/namainp"
+            android:labelFor="@id/alamatinp"
             android:text="Harga"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -116,32 +116,32 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/hargalbl" />
 
-        <TextView
-            android:id="@+id/vehiclelbl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/inter_regular"
-            android:labelFor="@id/namainp"
-            android:text="Kendaraan"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/hargainp" />
+<!--        <TextView-->
+<!--            android:id="@+id/vehiclelbl"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:fontFamily="@font/inter_regular"-->
+<!--            android:labelFor="@id/namainp"-->
+<!--            android:text="Kendaraan"-->
+<!--            android:textSize="16sp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/hargainp" />-->
 
-        <EditText
-            android:textColor="@color/white"
-            android:id="@+id/vehicleinp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:background="@drawable/rounded_btn"
-            android:ems="10"
-            android:fontFamily="@font/inter_regular"
-            android:inputType="textPersonName"
-            android:padding="3dp"
-            android:paddingStart="10dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/vehiclelbl" />
+<!--        <EditText-->
+<!--            android:textColor="@color/white"-->
+<!--            android:id="@+id/vehicleinp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="7dp"-->
+<!--            android:background="@drawable/rounded_btn"-->
+<!--            android:ems="10"-->
+<!--            android:fontFamily="@font/inter_regular"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:padding="3dp"-->
+<!--            android:paddingStart="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/vehiclelbl" />-->
 
         <TextView
             android:id="@+id/temulbl"
@@ -149,11 +149,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:fontFamily="@font/inter_regular"
-            android:labelFor="@id/namainp"
-            android:text="Alamat"
+            android:labelFor="@id/alamatinp"
+            android:text="Alamat Penawar Saat Ini"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/vehicleinp" />
+            app:layout_constraintTop_toBottomOf="@id/hargainp" />
 
         <EditText
             android:textColor="@color/white"

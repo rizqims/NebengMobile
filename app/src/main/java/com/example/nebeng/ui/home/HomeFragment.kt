@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.nebeng.Nawar_M
+import com.example.nebeng.NawarActivity
 import com.example.nebeng.NebengActivity
 import com.example.nebeng.R
 import com.example.nebeng.databinding.FragmentHomeBinding
@@ -59,7 +59,7 @@ class HomeFragment : Fragment() {
 
         val o: ImageButton = root.findViewById(R.id.Nawarbtn)
         o.setOnClickListener {
-            val Intent = Intent(requireActivity(), Nawar_M::class.java)
+            val Intent = Intent(requireActivity(), NawarActivity::class.java)
             startActivity(Intent)
         }
 
