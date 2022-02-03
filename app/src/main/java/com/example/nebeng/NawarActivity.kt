@@ -2,6 +2,7 @@ package com.example.nebeng
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -35,17 +36,20 @@ class NawarActivity : AppCompatActivity() {
         //benerin request pemesanan / sistem nawar
         val userbtn : Button = findViewById(R.id.nawarproceed)
         userbtn.setOnClickListener{
+//            Log.e("Message","Masuk")
             val retro = Retro().getRetroClient().create(PemesananAPI::class.java)
-            retro.postpemesanan(nawar).enqueue(object:Callback<NawarResponse>{
+            retro.postpemesanan(nawar).enqueue(object: Callback<NawarResponse> {
                 override fun onResponse(
                     call: Call<NawarResponse>,
                     response: Response<NawarResponse>
                 ) {
+                    Log.e("Message",response.toString())
                     Toast.makeText(this@NawarActivity,"Membuat Penawaran Berhasil",Toast.LENGTH_SHORT)
-                    startActivity(Intent(this@NawarActivity,Beranda::class.java))
+                    startActivity(Intent(this@NawarActivity,NebengActivity::class.java))
                 }
 
                 override fun onFailure(call: Call<NawarResponse>, t: Throwable) {
+                    Log.e("Message","Gagal")
                     Toast.makeText(this@NawarActivity,"Membuat Penawaran Gagal",Toast.LENGTH_SHORT)
                     startActivity(Intent(this@NawarActivity,Beranda::class.java))
                 }

@@ -9,7 +9,7 @@ interface PemesananAPI {
     @GET("getpemesanan")
     fun getpemesanan(): Call<PemesananResponse>
 
-    @POST
+    @POST("postpemesanan")
     fun postpemesanan(
         @Body pemesananRequest : NawarRequest
     ) : Call<NawarResponse>

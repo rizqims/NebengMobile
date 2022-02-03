@@ -47,7 +47,18 @@ class HomeActivity : AppCompatActivity() {
         }
     }
 
-    //function login
+//    //login biasa
+//    fun login(){
+//        val nis_input : EditText = findViewById(R.id.inp_NIS)
+//        val password_input : EditText = findViewById(R.id.inp_sandi)
+//        Log.e("Status","Masuk")
+//        if(nis_input.text.equals("user") && password_input.text.equals("user")){
+//            val Intent = Intent(this, Beranda::class.java)
+//            startActivity(Intent)
+//        }
+//    }
+
+
     fun login(){
         //Get Input Nis Dan Password
         val nis_input : EditText = findViewById(R.id.inp_NIS)
@@ -64,12 +75,13 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent)
         }
 
+        Toast.makeText(applicationContext,"Mohon Tunggu",Toast.LENGTH_LONG).show()
+
         val retro = Retro().getRetroClient().create(UserAPI::class.java)
-        retro.login(request).enqueue(object:Callback<UserResponse>{
+        retro.login(request).enqueue(object: Callback<UserResponse> {
             override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
                 val user = response.body()
                 //tinggal buat cara agar sukses login dan ke halaman beranda
-                Toast.makeText(applicationContext,"Mohon Tunggu",Toast.LENGTH_LONG).show()
                 if(user!!.message == "Login Sukses"){
                     Toast.makeText(applicationContext,"Login Berhasil",Toast.LENGTH_SHORT).show()
                     sharedpref.put(Constant.PREF_NIS,user!!.data?.nis.toString())
