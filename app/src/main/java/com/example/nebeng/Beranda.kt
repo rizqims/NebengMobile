@@ -47,10 +47,10 @@ class Beranda : AppCompatActivity() {
 
     override fun onStart() {
         super.onStart()
-        if(!sharedpref.getBoolean(Constant.PREF_IS_LOGIN)){
-            startActivity(Intent(this,HomeActivity::class.java))
-            finish()
-        }
+//        if(!sharedpref.getBoolean(Constant.PREF_IS_LOGIN)){
+//            startActivity(Intent(this,HomeActivity::class.java))
+//            finish()
+//        }
     }
 
 

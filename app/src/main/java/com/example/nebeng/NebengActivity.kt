@@ -54,7 +54,6 @@ class NebengActivity : AppCompatActivity() {
             override fun onFailure(call: Call<PemesananResponse>, t: Throwable) {
                 Log.e("Error",t.message.toString())
             }
-
         } )
     }
 }

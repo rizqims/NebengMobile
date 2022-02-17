@@ -26,6 +26,8 @@ class HomeActivity : AppCompatActivity() {
 ////            val Intent = Intent(this, MainActivity::class.java)
 ////            startActivity(Intent)
 //        }
+
+
         //saat oncreate jalankan function initAction()
         initAction()
     }
@@ -36,11 +38,25 @@ class HomeActivity : AppCompatActivity() {
             startActivity(Intent(this,Beranda::class.java))
             finish()
         }
+        //tidak termasuk login ini dibuat ms untuk testing ke beranda
+        val i : Button = findViewById(R.id.testy)
+        i.setOnClickListener{
+            val Intent = Intent(this, Beranda::class.java)
+            startActivity(Intent)
+        }
     }
 
     fun initAction(){
         //Get BtnLogin By Id
         val btnLogin:Button = findViewById(R.id.btn_login)
+
+        //tidak termasuk login ini dibuat ms untuk testing ke beranda
+        val i : Button = findViewById(R.id.testy)
+        i.setOnClickListener{
+            val Intent = Intent(this, Beranda::class.java)
+            startActivity(Intent)
+        }
+
         //Saat BtnLogin DiTekan
         btnLogin.setOnClickListener{
             login()
@@ -68,12 +84,7 @@ class HomeActivity : AppCompatActivity() {
         request.nis = nis_input.text.toString().trim()
         request.password = password_input.text.toString().trim()
 
-        //tidak termasuk login ini dibuat ms untuk testing ke beranda
-        val i : Button = findViewById(R.id.nen)
-        i.setOnClickListener{
-            val Intent = Intent(this, Beranda::class.java)
-            startActivity(Intent)
-        }
+
 
         Toast.makeText(applicationContext,"Mohon Tunggu",Toast.LENGTH_LONG).show()
 

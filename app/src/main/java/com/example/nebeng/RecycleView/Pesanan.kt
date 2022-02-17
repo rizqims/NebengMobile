@@ -11,8 +11,8 @@ class Pesanan {
         this.alamat_tujuan = alamat_tujuan
         this.total_bayar = total_bayar
         this.driver = driver
-
     }
+
     //alamat jemput
     fun getAlamatJemput():String{
         return alamat_jemput
