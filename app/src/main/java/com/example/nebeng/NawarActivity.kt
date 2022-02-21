@@ -28,15 +28,15 @@ class NawarActivity : AppCompatActivity() {
         val user_id : String? = sharedpref.getString(Constant.ID)
 //        val harga : String = total_bayar.text.toString().trim()
 
-        val nawar = NawarRequest()
-        nawar.alamat_jemput = alamat_jemput.text.toString().trim()
-        nawar.alamat_tujuan = alamat_tujuan.text.toString().trim()
-        nawar.total_bayar = total_bayar.text.toString().trim()
-        nawar.driver = user_id
         //benerin request pemesanan / sistem nawar
         val userbtn : Button = findViewById(R.id.nawarproceed)
         userbtn.setOnClickListener{
 //            Log.e("Message","Masuk")
+            val nawar = NawarRequest()
+            nawar.alamat_jemput = alamat_jemput.text.toString().trim()
+            nawar.alamat_tujuan = alamat_tujuan.text.toString().trim()
+            nawar.total_bayar = total_bayar.text.toString().trim()
+            nawar.driver = user_id
             val retro = Retro().getRetroClient().create(PemesananAPI::class.java)
             retro.postpemesanan(nawar).enqueue(object: Callback<NawarResponse> {
                 override fun onResponse(
