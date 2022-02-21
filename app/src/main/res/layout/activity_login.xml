@@ -7,17 +7,6 @@
     android:background="@color/white"
     tools:context=".HomeActivity">
 
-    <Button
-        android:id="@+id/testy"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="msk bg"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_login" />
-
     <ImageButton
         android:id="@+id/btn_help"
         android:layout_width="wrap_content"
@@ -82,7 +71,8 @@
         android:background="@drawable/rounded_btn"
         android:ems="10"
         android:inputType="textPersonName"
-        android:paddingLeft="20px"
+        android:hint="Masukkan NIP/NIK..."
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toTopOf="@+id/lbl_sandi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,7 +86,8 @@
         android:background="@drawable/rounded_btn"
         android:ems="10"
         android:inputType="textPassword"
-        android:paddingLeft="20px"
+        android:hint="Masukkan Sandi..."
+        android:paddingStart="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

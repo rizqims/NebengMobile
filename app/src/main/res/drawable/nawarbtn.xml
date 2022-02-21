@@ -10,7 +10,7 @@
             <solid android:color="@color/main" />
         </shape>
     </item>
-    <item android:drawable="@drawable/ic_baseline_emoji_people_24"
+    <item android:drawable="@drawable/ic_baseline_two_wheeler_24"
         android:width="45dp"
         android:height="45dp"
         android:gravity="center"/>

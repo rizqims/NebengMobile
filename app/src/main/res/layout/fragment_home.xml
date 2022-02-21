@@ -86,7 +86,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="5dp"
             android:background="@null"
-            android:src="@drawable/btn_nebnaw"
+            android:src="@drawable/nawarbtn"
 
             />
 
@@ -143,19 +143,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
+                android:src="@drawable/poster2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
                 android:src="@drawable/poster" />
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="15dp"
-                android:src="@drawable/promo_container" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:src="@drawable/promo_container" />
+                android:src="@drawable/poster2" />
         </LinearLayout>
 
     </ScrollView>

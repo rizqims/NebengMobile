@@ -43,10 +43,10 @@
                 android:id="@+id/namaProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="2dp"
                 android:fontFamily="@font/inter_bold"
                 android:text="Asep"
-                android:textSize="18sp" />
+                android:textSize="22sp" />
 
 
             <TextView
@@ -68,7 +68,7 @@
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/inter_regular"
                 android:text="0896969555"
-                android:textSize="13sp" />
+                android:textSize="22sp" />
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -155,7 +155,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="85dp"
         android:fontFamily="@font/inter_bold"
         android:text="V 0.1"
         android:textSize="16sp"

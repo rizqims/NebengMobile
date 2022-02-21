@@ -39,24 +39,16 @@ class HomeActivity : AppCompatActivity() {
             finish()
         }
         //tidak termasuk login ini dibuat ms untuk testing ke beranda
-        val i : Button = findViewById(R.id.testy)
-        i.setOnClickListener{
-            val Intent = Intent(this, Beranda::class.java)
-            startActivity(Intent)
-        }
+//        val i : Button = findViewById(R.id.testy)
+//        i.setOnClickListener{
+//            val Intent = Intent(this, Beranda::class.java)
+//            startActivity(Intent)
+//        }
     }
 
     fun initAction(){
         //Get BtnLogin By Id
         val btnLogin:Button = findViewById(R.id.btn_login)
-
-        //tidak termasuk login ini dibuat ms untuk testing ke beranda
-        val i : Button = findViewById(R.id.testy)
-        i.setOnClickListener{
-            val Intent = Intent(this, Beranda::class.java)
-            startActivity(Intent)
-        }
-
         //Saat BtnLogin DiTekan
         btnLogin.setOnClickListener{
             login()
