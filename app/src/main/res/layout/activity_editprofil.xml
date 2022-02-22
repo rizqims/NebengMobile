@@ -88,30 +88,30 @@
                 android:layout_below="@id/namauserinp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/genderinp"
+                android:labelFor="@id/emailinp"
                 android:text="Email"
 
                 android:textSize="16sp" />
 
             <EditText
-                android:id="@+id/genderinp"
+                android:id="@+id/emailinp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/genderlbl"
                 android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
                 android:background="@drawable/notsoroundedbtn"
                 android:ems="10"
                 android:fontFamily="@font/inter_regular"
-                android:inputType="textPersonName"
                 android:hint="Email..."
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
                 android:textColor="@color/black" />
 
             <TextView
                 android:id="@+id/telplbl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/genderinp"
+                android:layout_below="@id/emailinp"
                 android:layout_marginTop="15dp"
                 android:fontFamily="@font/inter_regular"
                 android:labelFor="@id/telpinp"
@@ -125,12 +125,12 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/telplbl"
                 android:layout_marginTop="10dp"
-                android:paddingStart="10dp"
                 android:background="@drawable/notsoroundedbtn"
                 android:ems="10"
                 android:fontFamily="@font/inter_regular"
-                android:inputType="textPersonName"
                 android:hint="No Telepon..."
+                android:inputType="textPersonName"
+                android:paddingStart="10dp"
                 android:textColor="@color/black" />
 
             <TextView
@@ -189,6 +189,7 @@
 
 
     <Button
+        android:id="@+id/btnedit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
