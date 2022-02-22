@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:id="@+id/kotak_wrap"
-        android:layout_width="wrap_content"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="45dp"
@@ -32,7 +32,10 @@
             android:layout_below="@id/profPic"
             android:layout_marginStart="25dp"
             android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:maxLines="1"
             android:fontFamily="@font/inter_bold"
+            android:text="Rizqi Maulana Sholihudinnnnnnnnnn"
             android:textSize="17sp" />
 <!--            android:text="Nama Akun"-->
 
@@ -44,6 +47,9 @@
             android:layout_below="@id/namaAkun"
             android:layout_marginStart="25dp"
             android:fontFamily="@font/inter_regular"
+
+            android:ellipsize="end"
+            android:maxLines="1"
             android:textSize="15sp" />
 <!--            android:text="Nomor Telepon"-->
 
