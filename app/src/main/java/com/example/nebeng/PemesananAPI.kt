@@ -4,6 +4,7 @@ import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
+import retrofit2.http.Url
 
 interface PemesananAPI {
     @GET("getpemesanan")
@@ -13,4 +14,9 @@ interface PemesananAPI {
     fun postpemesanan(
         @Body pemesananRequest : NawarRequest
     ) : Call<NawarResponse>
+
+    @GET
+    fun getbyidpemesanan(
+        @Url url : String,
+    ) : Call<OncePemesananResponse>
 }
