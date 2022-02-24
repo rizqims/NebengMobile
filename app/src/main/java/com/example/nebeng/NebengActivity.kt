@@ -40,7 +40,7 @@ class NebengActivity : AppCompatActivity() {
                 listView.adapter = pesanAdapter
 
                 for(i in pesan?.datapemesanan!!){
-                    addpesanlist.add(Pesanan(i.alamat_jemput.toString(),i.alamat_tujuan.toString(),i.total_bayar.toString(),i.driver!!.nama_lengkap.toString()))
+                    addpesanlist.add(Pesanan(i.alamat_jemput.toString(),i.alamat_tujuan.toString(),i.total_bayar.toString(),i.driver!!.nama_lengkap.toString(),i.id.toString()))
                 }
 //                addpesanlist.add(Pesanan("Soreang","SMKN 1 Katapang","20.000","Asep"))
 //                addpesanlist.add(Pesanan("Soreang","SMKN 1 Katapang","20.000","Asep"))

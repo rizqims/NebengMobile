@@ -4,6 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/activity_beranda.xml" value="0.25" />
+        <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/activity_editprofil.xml" value="0.22" />
+        <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/activity_nebeng_m.xml" value="0.13385416666666666" />
+        <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/activity_nebeng_proceed.xml" value="0.2" />
+        <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/activity_progres_nebeng.xml" value="0.1" />
+        <entry key="..\:/Document/Project PKK/NebengMobile/app/src/main/res/layout/list_template.xml" value="0.10461956521739131" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/actionbar.xml" value="0.11614583333333334" />
         <entry key="..\:/Users/Muhammad Alghifari/Documents/Project PKK/NebengMobile/app/src/main/res/drawable/ic_launcher_background.xml" value="0.11614583333333334" />

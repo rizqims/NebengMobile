@@ -13,5 +13,12 @@ class Constant {
         val EMAIL = "EMAIL"
         val NO_TELP = "NO_TELP"
         val JENIS_KELAMIN = "JENIS_KELAMIN"
+
+        //pemesanan
+        val IDPESANAN = "ID-PESANAN"
+        val ALAMATTUJUAN = "ALAMAT-TUJUAN"
+        val ALAMATJEMPUT = "ALAMAT-JEMPUT"
+        val KENDARAAN = "KENDARAAN"
+        val HARGA = "HARGA"
     }
 }
