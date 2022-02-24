@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Editprofil">
 
+
     <RelativeLayout
         android:id="@+id/topbar"
         android:layout_width="match_parent"
@@ -29,223 +30,244 @@
             android:textAllCaps="false" />
 
     </RelativeLayout>
-    <RelativeLayout
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
         android:id="@+id/wrapperinp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingStart="5dp"
         android:paddingEnd="5dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topbar">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:paddingStart="25dp"
-            android:paddingEnd="45dp">
-
-            <TextView
-                android:id="@+id/mi"
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Edit Profil"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:layout_marginTop="35dp"
+                android:paddingStart="25dp"
+                android:paddingEnd="45dp">
 
-            <TextView
-                android:id="@+id/namauserlbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/mi"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/namauserlbl"
-                android:text="Nama Pengguna"
-
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/namauserinp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/namauserlbl"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_regular"
-                android:hint="Nama Pengguna..."
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/genderlbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/namauserinp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/emailinp"
-                android:text="Email"
-
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/emailinp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/genderlbl"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_regular"
-                android:hint="Email..."
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/telplbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/emailinp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/telpinp"
-                android:text="Nomor Telepon"
-
-                android:textSize="16sp" />
-
-            <EditText
-                android:id="@+id/telpinp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/telplbl"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_regular"
-                android:hint="No Telepon..."
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/nislbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/telpinp"
-                android:layout_marginTop="15dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/radioGrp"
-                android:text="Jenis Kelamin"
-
-                android:textSize="16sp" />
-
-            <RadioGroup
-                android:id="@+id/radioGrp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/nislbl"
-                android:orientation="horizontal"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp">
-
-                <RadioButton
-                    android:id="@+id/radioM"
-                    android:layout_width="102dp"
+                <TextView
+                    android:id="@+id/mi"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="0.5"
-                    android:buttonTint="@color/main"
-                    android:checked="false"
-                    android:fontFamily="@font/inter_regular"
-                    android:text="Pria"
-                    android:textSize="14sp" />
+                    android:text="Edit Profil"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-                <RadioButton
-                    android:id="@+id/radioF"
-                    android:layout_width="0dp"
+                <TextView
+                    android:id="@+id/namauserlbl"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="start"
-                    android:layout_weight="1"
-                    android:buttonTint="@color/main"
-                    android:checked="false"
+                    android:layout_below="@id/mi"
+                    android:layout_marginTop="10dp"
                     android:fontFamily="@font/inter_regular"
-                    android:text="Wanita"
-                    android:textSize="14sp" />
-            </RadioGroup>
+                    android:labelFor="@id/namauserlbl"
+                    android:text="Nama Pengguna"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/namauserinp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namauserlbl"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notsoroundedbtn"
+                    android:ems="10"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Nama Pengguna..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/genderlbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/namauserinp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:labelFor="@id/emailinp"
+                    android:text="Email"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/emailinp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/genderlbl"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notsoroundedbtn"
+                    android:ems="10"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Email..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/telplbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/emailinp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:labelFor="@id/telpinp"
+                    android:text="Nomor Telepon"
+
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/telpinp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telplbl"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notsoroundedbtn"
+                    android:ems="10"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="No Telepon..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/nislbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/telpinp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:labelFor="@id/radioGrp"
+                    android:text="Jenis Kelamin"
+
+                    android:textSize="16sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGrp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nislbl"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <RadioButton
+                        android:id="@+id/radioM"
+                        android:layout_width="102dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/main"
+                        android:checked="false"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="Pria"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioF"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="1"
+                        android:buttonTint="@color/main"
+                        android:checked="false"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="Wanita"
+                        android:textSize="14sp" />
+                </RadioGroup>
 
 
-            <TextView
-                android:id="@+id/mii"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/radioGrp"
-                android:layout_marginTop="20dp"
-                android:text="Ganti Kata Sandi"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/mii"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radioGrp"
+                    android:layout_marginTop="20dp"
+                    android:text="Ganti Kata Sandi"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/sandilamalbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/mii"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/sandilamainp"
-                android:text="Sandi Lama"
+                <TextView
+                    android:id="@+id/ingfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mii"
+                    android:layout_marginTop="5dp"
+                    android:text="*Harap jangan mengisi dua kolom dibawah ini jika tidak ingin mengganti sandi"
+                    android:textSize="10sp" />
 
-                android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/sandilamalbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ingfo"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:labelFor="@id/sandilamainp"
+                    android:text="Sandi Lama"
 
-            <EditText
-                android:id="@+id/sandilamainp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sandilamalbl"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_regular"
-                android:hint="Sandi Lama..."
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
+                    android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/sandibarulbl"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sandilamainp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/inter_regular"
-                android:labelFor="@id/sandilamainp"
-                android:text="Sandi Baru"
+                <EditText
+                    android:id="@+id/sandilamainp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sandilamalbl"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notsoroundedbtn"
+                    android:ems="10"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Sandi Lama..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
-                android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/sandibarulbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sandilamainp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:labelFor="@id/sandilamainp"
+                    android:text="Sandi Baru"
 
-            <EditText
-                android:id="@+id/sandibaruinp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/sandibarulbl"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/notsoroundedbtn"
-                android:ems="10"
-                android:fontFamily="@font/inter_regular"
-                android:hint="Sandi Baru..."
-                android:inputType="textPersonName"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-        </RelativeLayout>
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/sandibaruinp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/sandibarulbl"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/notsoroundedbtn"
+                    android:ems="10"
+                    android:fontFamily="@font/inter_regular"
+                    android:hint="Sandi Baru..."
+                    android:inputType="textPersonName"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
 
 
 
@@ -261,9 +283,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="42dp"
         android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
         android:text="Simpan"
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/wrapperinp" />
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
