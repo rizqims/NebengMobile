@@ -13,6 +13,7 @@ class Constant {
         val EMAIL = "EMAIL"
         val NO_TELP = "NO_TELP"
         val JENIS_KELAMIN = "JENIS_KELAMIN"
+        val PASSWORD = "PASSWORD"
 
         //pemesanan
         val IDPESANAN = "ID-PESANAN"

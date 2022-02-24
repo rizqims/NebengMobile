@@ -19,4 +19,10 @@ interface UserAPI {
         @Body editprofile : EditProfileRequest
     ) : Call<EditProfileResponse>
 
+    @POST
+    fun changepassword(
+        @Url url : String,
+        @Body changepassword : ChangePasswordRequest
+    ) : Call<ChangePasswordResponse>
+
 }

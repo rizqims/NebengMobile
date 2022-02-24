@@ -96,6 +96,7 @@ class HomeActivity : AppCompatActivity() {
                     sharedpref.put(Constant.EMAIL,user!!.data?.email.toString())
                     sharedpref.put(Constant.NO_TELP,user!!.data?.no_telp.toString())
                     sharedpref.put(Constant.JENIS_KELAMIN,user!!.data?.jenis_kelamin.toString())
+                    sharedpref.put(Constant.PASSWORD,user!!.data?.password.toString())
 
                     val intent = Intent(this@HomeActivity, Beranda::class.java)
 //                    intent.put Extra("nama_lengkap",user!!.data?.nama_lengkap.toString())

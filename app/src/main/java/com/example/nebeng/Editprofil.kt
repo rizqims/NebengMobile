@@ -20,6 +20,37 @@ class Editprofil : AppCompatActivity() {
         sharedpref = PreferencesHelper(this)
         supportActionBar?.hide()
 
+        //ganti password
+        val sandilamainp : EditText = findViewById(R.id.sandilamainp)
+        val sandibaruinp : EditText = findViewById(R.id.sandibaruinp)
+        val btnGantiPassword : Button = findViewById(R.id.btngantipassword)
+        btnGantiPassword.setOnClickListener {
+            val txtsandilama : String =  sandilamainp.text.trim().toString()
+            val txtsandidata : String = sharedpref.getString(Constant.PASSWORD).toString()
+            val txtsandibaru : String = sandibaruinp.text.trim().toString()
+            Toast.makeText(applicationContext,"Mohon Tunggu",Toast.LENGTH_SHORT).show()
+            val changepwrequest = ChangePasswordRequest()
+            changepwrequest.password = txtsandibaru
+            if(txtsandilama == txtsandidata){
+                val retro = Retro().getRetroClient().create(UserAPI::class.java)
+                retro.changepassword("changepassword/"+sharedpref.getString(Constant.ID),changepwrequest).enqueue(object: Callback<ChangePasswordResponse>{
+                    override fun onResponse(
+                        call: Call<ChangePasswordResponse>,
+                        response: Response<ChangePasswordResponse>
+                    ) {
+                        sharedpref.put(Constant.PASSWORD,txtsandibaru)
+                        Toast.makeText(applicationContext,"Password Berhasil Diubah",Toast.LENGTH_LONG).show()
+                    }
+
+                    override fun onFailure(call: Call<ChangePasswordResponse>, t: Throwable) {
+                        Toast.makeText(applicationContext,"Terjadi Masalah Pada Server",Toast.LENGTH_LONG).show()
+                    }
+
+                })
+            }else{
+                Toast.makeText(applicationContext,"Password Lama Salah",Toast.LENGTH_LONG).show()
+            }
+        }
 
         //button back
         val btnBackProfile : Button = findViewById(R.id.backprofil)
@@ -100,7 +131,6 @@ class Editprofil : AppCompatActivity() {
                     Toast.makeText(applicationContext,"Edit Profile Gagal",Toast.LENGTH_SHORT).show()
                 }
             })
-
         }
     }
 }
