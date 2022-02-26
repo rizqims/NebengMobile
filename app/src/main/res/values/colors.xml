@@ -12,4 +12,8 @@
     <color name="main_2">#E1CCEC</color>
     <color name="transparent">#0000</color>
 
+
+    <color name="success">#7BD591</color>
+    <color name="failed">#FF6D62</color>
+
 </resources>
