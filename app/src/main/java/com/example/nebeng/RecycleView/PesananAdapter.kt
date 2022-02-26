@@ -2,7 +2,6 @@ package com.example.nebeng.RecycleView
 
 import android.content.Context
 import android.content.Intent
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -50,9 +49,9 @@ class PesananAdapter(val context: Context) : RecyclerView.Adapter<PesananAdapter
             driver?.text = p.getDriver()
 
             buttonNebeng!!.setOnClickListener {
-                Log.e("IdPesanan: ",p.getId().toString())
                 val intent = Intent(context, NebengProceed::class.java)
                 intent.putExtra("IdPesanan",p.getId().toString())
+                intent.putExtra("IdDriver",p.getIdDriver().toString())
                 context.startActivity(intent)
             }
         }

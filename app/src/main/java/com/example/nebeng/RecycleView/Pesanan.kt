@@ -5,14 +5,16 @@ class Pesanan {
     private var alamat_tujuan : String = ""
     private var total_bayar : String = ""
     private var driver : String = ""
+    private var iddriver : String = ""
     private var id : String = ""
 
-    constructor(alamat_jemput:String,alamat_tujuan:String,total_bayar:String,driver:String,id:String){
+    constructor(alamat_jemput:String,alamat_tujuan:String,total_bayar:String,driver:String,id:String,iddriver:String){
         this.alamat_jemput = alamat_jemput
         this.alamat_tujuan = alamat_tujuan
         this.total_bayar = total_bayar
         this.driver = driver
         this.id = id
+        this.iddriver = iddriver
     }
 
     //alamat jemput
@@ -53,6 +55,15 @@ class Pesanan {
     }
     fun setId(id: String){
         this.id = id
+    }
+
+    //iddriver
+    fun getIdDriver():String{
+        return iddriver
+    }
+
+    fun setIdDriver(iddriver:String){
+        this.iddriver = iddriver
     }
 
 

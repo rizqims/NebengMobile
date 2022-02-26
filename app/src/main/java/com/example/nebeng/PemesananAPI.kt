@@ -1,5 +1,6 @@
 package com.example.nebeng
 
+import com.example.nebeng.ui.ProsesPemesananResponse
 import retrofit2.Call
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -19,4 +20,12 @@ interface PemesananAPI {
     fun getbyidpemesanan(
         @Url url : String,
     ) : Call<OncePemesananResponse>
+
+    @GET("getprosespemesanan")
+    fun getprosespemesanan() : Call<ProsesPemesananResponse>
+
+    @POST("postprosespemesanan")
+    fun postprosespemesanan(
+        @Body proesepemesananrequest : ProsesPemesananRequest
+    ) : Call<ProsesPemesananResponse>
 }

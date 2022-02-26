@@ -30,25 +30,33 @@
                 android:textSize="15sp" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Ingin Menebeng Dengan Anda Ke"
+                android:textSize="11dp"></TextView>
 
-                android:ellipsize="end"
-                android:maxLines="1"
-                android:fontFamily="@font/inter_regular"
+            <TextView
+
                 android:id="@+id/alamat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/nama"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="14dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/inter_regular"
+                android:maxLines="1"
                 android:text="Jalan Flamboyan no 12 55"
                 android:textSize="12sp" />
 
             <TextView
-                android:fontFamily="@font/inter_regular"
+                android:id="@+id/hargarequest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/alamat"
                 android:layout_alignParentBottom="true"
-                android:text="Rp 5000"/>
+                android:fontFamily="@font/inter_regular"
+                android:text="Rp 5000" />
             <RelativeLayout
                 android:id="@+id/btnwrap"
                 android:layout_width="140dp"
