@@ -59,7 +59,7 @@
                 android:text="Rp 5000" />
             <RelativeLayout
                 android:id="@+id/btnwrap"
-                android:layout_width="140dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true">
