@@ -12,6 +12,7 @@ import com.example.nebeng.R
 import com.example.nebeng.RecycleView.RequestPenumpang
 import com.example.nebeng.RecycleView.RequestPenumpangAdapter
 import com.example.nebeng.Retro
+import com.example.nebeng.databinding.FragmentDashboardBinding
 import com.example.nebeng.helper.Constant
 import com.example.nebeng.helper.PreferencesHelper
 import com.example.nebeng.ui.ProsesPemesananResponse
@@ -22,12 +23,12 @@ import retrofit2.Response
 
 class DashboardFragment : Fragment() {
 
-//    private lateinit var dashboardViewModel: DashboardViewModel
-//    private var _binding: FragmentDashboardBinding? = null
-//
-//    // This property is only valid between onCreateView and
-//    // onDestroyView.
-//    private val binding get() = _binding!!
+    private lateinit var dashboardViewModel: DashboardViewModel
+    private var _binding: FragmentDashboardBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
 
     lateinit var requestPenumpangAdapter : RequestPenumpangAdapter
     lateinit var sharedpref : PreferencesHelper
@@ -50,8 +51,6 @@ class DashboardFragment : Fragment() {
 //        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
 //            textView.text = it
 //        })
-//
-//
 //
 //
 //        return root

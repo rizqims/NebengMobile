@@ -7,14 +7,16 @@ class Pesanan {
     private var driver : String = ""
     private var iddriver : String = ""
     private var id : String = ""
+    private var is_accept = ""
 
-    constructor(alamat_jemput:String,alamat_tujuan:String,total_bayar:String,driver:String,id:String,iddriver:String){
+    constructor(alamat_jemput:String,alamat_tujuan:String,total_bayar:String,driver:String,id:String,iddriver:String,is_accept:String){
         this.alamat_jemput = alamat_jemput
         this.alamat_tujuan = alamat_tujuan
         this.total_bayar = total_bayar
         this.driver = driver
         this.id = id
         this.iddriver = iddriver
+        this.is_accept = is_accept
     }
 
     //alamat jemput
@@ -64,6 +66,15 @@ class Pesanan {
 
     fun setIdDriver(iddriver:String){
         this.iddriver = iddriver
+    }
+
+    //status diterima atau tidak
+    fun getIsAccept():String{
+        return is_accept
+    }
+
+    fun setIsAccept(is_accept: String){
+        this.is_accept = is_accept
     }
 
 

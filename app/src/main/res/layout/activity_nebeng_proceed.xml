@@ -93,6 +93,7 @@
                 app:layout_constraintTop_toBottomOf="@id/kendaraan" />
 
 
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -108,5 +109,5 @@
         android:textAllCaps="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/wrapkotak" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
+

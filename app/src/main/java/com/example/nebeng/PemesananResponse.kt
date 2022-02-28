@@ -41,6 +41,10 @@ class PemesananResponse {
         @Expose
         var driver:Driver?=null
 
+        @SerializedName("is_accpet")
+        @Expose
+        var is_Accept:String?=null
+
         class Driver{
             @SerializedName("id")
             @Expose

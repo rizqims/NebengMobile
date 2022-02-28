@@ -1,9 +1,11 @@
 package com.example.nebeng.RecycleView
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.nebeng.R
@@ -35,11 +37,21 @@ class RequestPenumpangAdapter(val context:Context):RecyclerView.Adapter<RequestP
         val txtPenumpang : TextView = item.findViewById(R.id.nama)
         val txtAlamatTujuan : TextView = item.findViewById(R.id.alamat)
         val txtHarga : TextView = item.findViewById(R.id.hargarequest)
+        val btnAccpet : ImageButton = item.findViewById(R.id.accept)
+        val btnDecline : ImageButton = item.findViewById(R.id.decline)
 
         fun bindmodel(r:RequestPenumpang){
             txtPenumpang.text = r.getNamaPenumpang()
             txtAlamatTujuan.text = r.getAlamatTujuan()
             txtHarga.text = r.getHarga()
+
+            btnAccpet.setOnClickListener {
+
+            }
+
+            btnDecline.setOnClickListener {
+                Log.e("Tolak","Masuk")
+            }
         }
     }
 }

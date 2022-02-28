@@ -66,15 +66,19 @@
 
 
                 <ImageButton
+                    android:id="@+id/accept"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
+                    android:onClick="onClickAccept"
                     android:src="@drawable/yesbtn" />
 
                 <ImageButton
+                    android:id="@+id/decline"
                     android:layout_alignParentEnd="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:onClick="onClickDecline"
                     android:src="@drawable/nobtn"/>
 
 
